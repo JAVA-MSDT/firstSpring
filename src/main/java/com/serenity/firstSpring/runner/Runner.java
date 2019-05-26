@@ -12,6 +12,8 @@ public class Runner {
 
         Person person1 = applicationContext.getBean("person1", Person.class);
         System.out.println("Person id One: " + person1.getId() + ", Person Name One: " + person1.getName());
+        
+        applicationContext.close();
 
     }
 }
